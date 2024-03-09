@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    max-width: 970px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 0.8rem;
+}
+hr {
+    border: silver;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 625px;
+    background-image: url("https://m.media-amazon.com/images/S/aplus-media-library-service-media/b0e13a50-bfdb-4b70-84d6-6e31dcd45396.__CR0,130,1920,820_PT0_SX1464_V1___.png");
+    overflow: hidden;
+}
+.slider-container .left,
+.slider-container .right  {
+    height: 62px;
+    border: none;
+    background: white;
+    width: 28px;
+    color: black;
+    cursor: pointer;
+    padding: 0px;
+    font-size: 1.5rem;
+
+}
+.slider-container .left {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    border-radius: 0 4px 4px 0 ;
+}
+.slider-container .right {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+.slider {
+    width: 100%;
+    /* overflow: hidden; */
+    position: relative;
+  }
+ol {
+    list-style-type: none;
+    height: 452px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 149px;
+    /* background: black; */
+    margin-left: 80px;
+    width: 815px;
+    transition: transform 0.5s ease;
+
+}
+ol > li {
+    margin-top: 0;
+    margin-left: 30px;
+    height: 450px;
+    width: 360px;
+    background: white;;
+    flex: 0 0 auto;
+
+
+}
+.slider-container .overlay-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 13px 65px 13px 13px;
+    width: 437px;
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+
+}
+.card-container {
+
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+.card {
+    max-width: 220px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+ li {
+    margin : 15px 0;
+}
